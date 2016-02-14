@@ -9,13 +9,16 @@
 #import "NewsCell.h"
 #import "News.h"
 #import "MJExtension.h"
+#import "YYModel.h"
 #import "ANGButton.h"
+#import "PureLayout.h"
 
 #define SCREENWEITH [UIScreen mainScreen].bounds.size.width
 #define SCREENHEIGHT [UIScreen mainScreen].bounds.size.height
 
 @interface ViewController () <UICollectionViewDataSource, UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+@property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *layout;
 @property (strong, nonatomic) NSArray *newses;
 @property (nonatomic ,strong) NSTimer *timer;
 @property (nonatomic ,strong) UIPageControl *pageControl;
@@ -29,7 +32,22 @@
 - (NSArray *)newses
 {
     if (!_newses) {
-        self.newses = [News objectArrayWithFilename:@"newses.plist"];
+        
+        //MJExtension 解析
+//        self.newses = [News objectArrayWithFilename:@"newses.plist"];
+        
+        //YYModel 解析
+        NSString *file = [[NSBundle mainBundle] pathForResource:@"newses.plist" ofType:nil];
+        NSArray *keyValuesArray = [NSArray arrayWithContentsOfFile:file];
+        NSMutableArray *modelArray = [NSMutableArray array];
+        for (NSDictionary *keyValues in keyValuesArray) {
+            if (![keyValues isKindOfClass:[NSDictionary class]]) continue;
+            
+            News *model = [News yy_modelWithJSON:keyValues];
+            [modelArray addObject:model];
+        }
+        self.newses = modelArray;
+        
     }
     return _newses;
 }
@@ -57,7 +75,8 @@
     [super viewDidLoad];
 
     // 注册cell
-    [self.collectionView registerNib:[UINib nibWithNibName:@"NewsCell" bundle:nil] forCellWithReuseIdentifier:@"news"];
+    UINib *nib = [UINib nibWithNibName:@"NewsCell" bundle:nil];
+    [self.collectionView registerNib:nib forCellWithReuseIdentifier:@"news"];
     
     [self.view bringSubviewToFront:self.pageControl];
     [self.view addSubview:self.pageControl];
@@ -108,6 +127,18 @@
 {
     NSLog(@"indexPath.item = %ld",(long)indexPath.item);
 }
+
+/* 定义每个UICollectionView 的大小 */
+//- (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath
+//{
+//    return CGSizeMake(self.collectionView.frame.size.width , self.collectionView.frame.size.height);
+//}
+
+/* 定义每个UICollectionView 的边缘 */
+//-(UIEdgeInsets)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section
+//{
+//    return UIEdgeInsetsMake(0, 5, 0, 5);//上 左 下 右
+//}
 
 - (void)scrollViewWillBeginDecelerating:(UIScrollView *)scrollView
 {

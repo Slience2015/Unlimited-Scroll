@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05035D3A1C7054A900AF8EBA /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 05035D361C7054A900AF8EBA /* NSObject+YYModel.m */; };
+		05035D3B1C7054A900AF8EBA /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 05035D381C7054A900AF8EBA /* YYClassInfo.m */; };
+		05DEC4E51C65883500671E8A /* ALView+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DEC4DD1C65883500671E8A /* ALView+PureLayout.m */; };
+		05DEC4E61C65883500671E8A /* NSArray+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DEC4DF1C65883500671E8A /* NSArray+PureLayout.m */; };
+		05DEC4E71C65883500671E8A /* NSLayoutConstraint+PureLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DEC4E11C65883500671E8A /* NSLayoutConstraint+PureLayout.m */; };
 		05E015EA1C64424300C18E35 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E015E91C64424300C18E35 /* main.m */; };
 		05E015ED1C64424300C18E35 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E015EC1C64424300C18E35 /* AppDelegate.m */; };
-		05E015F31C64424300C18E35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E015F11C64424300C18E35 /* Main.storyboard */; };
 		05E015F51C64424300C18E35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05E015F41C64424300C18E35 /* Assets.xcassets */; };
 		05E016031C64424300C18E35 /* Unlimted_ScrollTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E016021C64424300C18E35 /* Unlimted_ScrollTests.m */; };
 		05E0160E1C64424300C18E35 /* Unlimted_ScrollUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E0160D1C64424300C18E35 /* Unlimted_ScrollUITests.m */; };
@@ -49,11 +53,24 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		05035D351C7054A900AF8EBA /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		05035D361C7054A900AF8EBA /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		05035D371C7054A900AF8EBA /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		05035D381C7054A900AF8EBA /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		05035D391C7054A900AF8EBA /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
+		05DEC4DC1C65883500671E8A /* ALView+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ALView+PureLayout.h"; sourceTree = "<group>"; };
+		05DEC4DD1C65883500671E8A /* ALView+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ALView+PureLayout.m"; sourceTree = "<group>"; };
+		05DEC4DE1C65883500671E8A /* NSArray+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+PureLayout.h"; sourceTree = "<group>"; };
+		05DEC4DF1C65883500671E8A /* NSArray+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+PureLayout.m"; sourceTree = "<group>"; };
+		05DEC4E01C65883500671E8A /* NSLayoutConstraint+PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+PureLayout.h"; sourceTree = "<group>"; };
+		05DEC4E11C65883500671E8A /* NSLayoutConstraint+PureLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+PureLayout.m"; sourceTree = "<group>"; };
+		05DEC4E21C65883500671E8A /* PureLayout+Internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PureLayout+Internal.h"; sourceTree = "<group>"; };
+		05DEC4E31C65883500671E8A /* PureLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayout.h; sourceTree = "<group>"; };
+		05DEC4E41C65883500671E8A /* PureLayoutDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PureLayoutDefines.h; sourceTree = "<group>"; };
 		05E015E51C64424300C18E35 /* Unlimted-Scroll.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Unlimted-Scroll.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		05E015E91C64424300C18E35 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		05E015EB1C64424300C18E35 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		05E015EC1C64424300C18E35 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		05E015F21C64424300C18E35 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05E015F41C64424300C18E35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		05E015F91C64424300C18E35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		05E015FE1C64424300C18E35 /* Unlimted-ScrollTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unlimted-ScrollTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -120,6 +137,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		05035D341C7054A900AF8EBA /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				05035D351C7054A900AF8EBA /* NSObject+YYModel.h */,
+				05035D361C7054A900AF8EBA /* NSObject+YYModel.m */,
+				05035D371C7054A900AF8EBA /* YYClassInfo.h */,
+				05035D381C7054A900AF8EBA /* YYClassInfo.m */,
+				05035D391C7054A900AF8EBA /* YYModel.h */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		05DEC4DB1C65883500671E8A /* PureLayout */ = {
+			isa = PBXGroup;
+			children = (
+				05DEC4DC1C65883500671E8A /* ALView+PureLayout.h */,
+				05DEC4DD1C65883500671E8A /* ALView+PureLayout.m */,
+				05DEC4DE1C65883500671E8A /* NSArray+PureLayout.h */,
+				05DEC4DF1C65883500671E8A /* NSArray+PureLayout.m */,
+				05DEC4E01C65883500671E8A /* NSLayoutConstraint+PureLayout.h */,
+				05DEC4E11C65883500671E8A /* NSLayoutConstraint+PureLayout.m */,
+				05DEC4E21C65883500671E8A /* PureLayout+Internal.h */,
+				05DEC4E31C65883500671E8A /* PureLayout.h */,
+				05DEC4E41C65883500671E8A /* PureLayoutDefines.h */,
+			);
+			path = PureLayout;
+			sourceTree = "<group>";
+		};
 		05E015DC1C64424300C18E35 = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +188,8 @@
 		05E015E71C64424300C18E35 /* Unlimted-Scroll */ = {
 			isa = PBXGroup;
 			children = (
+				05035D341C7054A900AF8EBA /* YYModel */,
+				05DEC4DB1C65883500671E8A /* PureLayout */,
 				05E016381C6442C000C18E35 /* CustomButton */,
 				05E0161B1C6442A900C18E35 /* MJExtension */,
 				05E015EB1C64424300C18E35 /* AppDelegate.h */,
@@ -155,7 +202,6 @@
 				05E016441C64443700C18E35 /* Main.storyboard */,
 				05E016451C64443700C18E35 /* ViewController.h */,
 				05E016461C64443700C18E35 /* ViewController.m */,
-				05E015F11C64424300C18E35 /* Main.storyboard */,
 				05E015F41C64424300C18E35 /* Assets.xcassets */,
 				05E015F91C64424300C18E35 /* Info.plist */,
 				05E015E81C64424300C18E35 /* Supporting Files */,
@@ -331,7 +377,6 @@
 			files = (
 				05E015F51C64424300C18E35 /* Assets.xcassets in Resources */,
 				05E0164A1C64443700C18E35 /* Main.storyboard in Resources */,
-				05E015F31C64424300C18E35 /* Main.storyboard in Resources */,
 				05E0163D1C64430E00C18E35 /* newses.plist in Resources */,
 				05E016491C64443700C18E35 /* NewsCell.xib in Resources */,
 			);
@@ -358,17 +403,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05035D3A1C7054A900AF8EBA /* NSObject+YYModel.m in Sources */,
 				05E016301C6442A900C18E35 /* MJIvar.m in Sources */,
 				05E016341C6442A900C18E35 /* MJTypeEncoding.m in Sources */,
 				05E0164B1C64443700C18E35 /* ViewController.m in Sources */,
 				05E0162F1C6442A900C18E35 /* MJArgument.m in Sources */,
 				05E016371C6442A900C18E35 /* NSObject+MJMember.m in Sources */,
+				05DEC4E71C65883500671E8A /* NSLayoutConstraint+PureLayout.m in Sources */,
 				05E0163B1C6442C000C18E35 /* ANGButton.m in Sources */,
+				05035D3B1C7054A900AF8EBA /* YYClassInfo.m in Sources */,
 				05E016361C6442A900C18E35 /* NSObject+MJKeyValue.m in Sources */,
+				05DEC4E61C65883500671E8A /* NSArray+PureLayout.m in Sources */,
 				05E016471C64443700C18E35 /* News.m in Sources */,
 				05E016351C6442A900C18E35 /* NSObject+MJCoding.m in Sources */,
 				05E016321C6442A900C18E35 /* MJMethod.m in Sources */,
 				05E016331C6442A900C18E35 /* MJType.m in Sources */,
+				05DEC4E51C65883500671E8A /* ALView+PureLayout.m in Sources */,
 				05E015ED1C64424300C18E35 /* AppDelegate.m in Sources */,
 				05E016481C64443700C18E35 /* NewsCell.m in Sources */,
 				05E016311C6442A900C18E35 /* MJMember.m in Sources */,
@@ -406,17 +456,6 @@
 			targetProxy = 05E0160A1C64424300C18E35 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		05E015F11C64424300C18E35 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				05E015F21C64424300C18E35 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		05E016101C64424300C18E35 /* Debug */ = {
@@ -510,6 +549,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lst.Unlimted-Scroll";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -522,6 +562,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "lst.Unlimted-Scroll";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -592,6 +633,7 @@
 				05E016141C64424300C18E35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05E016151C64424300C18E35 /* Build configuration list for PBXNativeTarget "Unlimted-ScrollTests" */ = {
 			isa = XCConfigurationList;
@@ -600,6 +642,7 @@
 				05E016171C64424300C18E35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		05E016181C64424300C18E35 /* Build configuration list for PBXNativeTarget "Unlimted-ScrollUITests" */ = {
 			isa = XCConfigurationList;
@@ -608,6 +651,7 @@
 				05E0161A1C64424300C18E35 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

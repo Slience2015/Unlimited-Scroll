@@ -29,46 +29,6 @@
 @end
 
 @implementation ViewController
-- (NSArray *)newses
-{
-    if (!_newses) {
-        
-        //MJExtension 解析
-//        self.newses = [News objectArrayWithFilename:@"newses.plist"];
-        
-        //YYModel 解析
-        NSString *file = [[NSBundle mainBundle] pathForResource:@"newses.plist" ofType:nil];
-        NSArray *keyValuesArray = [NSArray arrayWithContentsOfFile:file];
-        NSMutableArray *modelArray = [NSMutableArray array];
-        for (NSDictionary *keyValues in keyValuesArray) {
-            if (![keyValues isKindOfClass:[NSDictionary class]]) continue;
-            
-            News *model = [News yy_modelWithJSON:keyValues];
-            [modelArray addObject:model];
-        }
-        self.newses = modelArray;
-        
-    }
-    return _newses;
-}
-
-- (NSTimer *)timer
-{
-    if (!_timer) {
-        self.timer = [[NSTimer alloc]initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:3] interval:3 target:self selector:@selector(scrollPositionCell) userInfo:nil repeats:YES];
-        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
-    }
-    return _timer;
-}
-
--(UIPageControl *)pageControl
-{
-    if (!_pageControl) {
-        self.pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(0, self.collectionView.frame.size.height + self.collectionView.frame.origin.y - 20, SCREENWEITH, 15)];
-        self.pageControl.currentPage = 0;
-    }
-    return _pageControl;
-}
 
 - (void)viewDidLoad
 {
@@ -181,6 +141,48 @@
     //3）通过动画滚动到下一个位置
     [self.collectionView scrollToItemAtIndexPath:nextIndexPath atScrollPosition:UICollectionViewScrollPositionLeft animated:animation];
 
+}
+
+- (NSArray *)newses
+{
+    if (!_newses) {
+        
+        //MJExtension 解析
+        //        self.newses = [News objectArrayWithFilename:@"newses.plist"];
+        
+        //YYModel 解析
+        NSString *file = [[NSBundle mainBundle] pathForResource:@"newses.plist" ofType:nil];
+        NSArray *keyValuesArray = [NSArray arrayWithContentsOfFile:file];
+        NSMutableArray *modelArray = [NSMutableArray array];
+        for (NSDictionary *keyValues in keyValuesArray) {
+            if (![keyValues isKindOfClass:[NSDictionary class]]) continue;
+            
+            News *model = [News yy_modelWithJSON:keyValues];
+            [modelArray addObject:model];
+        }
+        self.newses = modelArray;
+        
+    }
+    return _newses;
+}
+
+#pragma mark getter
+- (NSTimer *)timer
+{
+    if (!_timer) {
+        self.timer = [[NSTimer alloc]initWithFireDate:[NSDate dateWithTimeIntervalSinceNow:3] interval:3 target:self selector:@selector(scrollPositionCell) userInfo:nil repeats:YES];
+        [[NSRunLoop currentRunLoop] addTimer:self.timer forMode:NSDefaultRunLoopMode];
+    }
+    return _timer;
+}
+
+-(UIPageControl *)pageControl
+{
+    if (!_pageControl) {
+        self.pageControl = [[UIPageControl alloc]initWithFrame:CGRectMake(0, self.collectionView.frame.size.height + self.collectionView.frame.origin.y - 20, SCREENWEITH, 15)];
+        self.pageControl.currentPage = 0;
+    }
+    return _pageControl;
 }
 
 @end

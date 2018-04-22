@@ -33,6 +33,7 @@
 		05E016491C64443700C18E35 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 05E016431C64443700C18E35 /* NewsCell.xib */; };
 		05E0164A1C64443700C18E35 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05E016441C64443700C18E35 /* Main.storyboard */; };
 		05E0164B1C64443700C18E35 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 05E016461C64443700C18E35 /* ViewController.m */; };
+		E652668E208CB74300788AC5 /* a.png in Resources */ = {isa = PBXBuildFile; fileRef = E652668D208CB74300788AC5 /* a.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +111,7 @@
 		05E016441C64443700C18E35 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		05E016451C64443700C18E35 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		05E016461C64443700C18E35 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E652668D208CB74300788AC5 /* a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = a.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +190,7 @@
 		05E015E71C64424300C18E35 /* Unlimted-Scroll */ = {
 			isa = PBXGroup;
 			children = (
+				E652668D208CB74300788AC5 /* a.png */,
 				05035D341C7054A900AF8EBA /* YYModel */,
 				05DEC4DB1C65883500671E8A /* PureLayout */,
 				05E016381C6442C000C18E35 /* CustomButton */,
@@ -378,6 +381,7 @@
 				05E015F51C64424300C18E35 /* Assets.xcassets in Resources */,
 				05E0164A1C64443700C18E35 /* Main.storyboard in Resources */,
 				05E0163D1C64430E00C18E35 /* newses.plist in Resources */,
+				E652668E208CB74300788AC5 /* a.png in Resources */,
 				05E016491C64443700C18E35 /* NewsCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
